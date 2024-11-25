@@ -1,0 +1,287 @@
+/* Max-width for containers at large screens */
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
+
+/* Styles for small screens (200px to 575px) */
+@media (min-width: 200px) and (max-width: 575px) {
+    .btn-outer {
+        position: fixed;
+        bottom: 0;
+        right: 5%;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .bannercontent h1 {
+        font-size: 4vw;  /* Responsive font size */
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.4em;
+        margin-bottom: 1.5em;
+    }
+
+    .bannercontent br {
+        display: none;
+    }
+
+    .bike img {
+        width: 90%;  /* Responsive image */
+        max-width: 330px;
+        border: 5px solid rgb(79, 238, 10);
+        border-radius: 5px;
+        position: relative;
+        top: 10px;
+        z-index: -1;
+    }
+
+    .carousel-item {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+/* Styles for tablets (768px and up) */
+@media (min-width: 768px) {
+    .btn-outer {
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+    }
+
+    .bannercontent h1 {
+        font-size: 3.5vw;  /* Responsive font size */
+    }
+
+    .bike img {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+/* Styles for large screens (1024px and up) */
+@media (min-width: 1024px) {
+    .btn-outer {
+        position: relative;
+        right: -1em;
+        align-items: center;
+    }
+
+    .bike img {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+/* Styles for small mobile screens (max-width 767px) */
+@media (max-width: 767px) {
+    .btn-outer {
+        position: fixed;
+        bottom: 0;
+        right: 5%;
+        width: 90%;
+    }
+
+    .bike img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+/* Fix for header z-index for smaller screens */
+@media (max-width: 1400px) {
+    header {
+        z-index: 1;
+    }
+}
+
+/* Adjust bike image for very small screens (max-width 684px) */
+@media (max-width: 684px) {
+    .bike img {
+        width: 85%;
+        max-width: 300px;
+    }
+}
+
+/* Adjust bike image for screens between 684px and 934px */
+@media (max-width: 934px) {
+    .bike img {
+        width: 85%;
+        max-width: 350px;
+    }
+}
+
+/* Adjust bike image for screens between 992px and 576px */
+@media (min-width: 992px) and (max-width: 576px) {
+    .bike img {
+        width: 100%;
+        position: relative;
+        left: 10em;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .bannercontent h1 {
+        font-size: 5vw; /* Slightly smaller for ultra small screens */
+    }
+
+    @media (max-width: 480px) {
+        .bike img {
+            width: 100%;
+            height: 14em;
+        }
+    }
+}
+
+/* Fluid container adjustments for ultra-wide screens (more than 1400px) */
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1300px; 
+    }
+}
+@media (min-width: 767px) {
+  
+    .col-lg-12 img{
+        width: 65%;
+        min-width: 286px;
+    }
+    .col-sm-6part1{
+        position: relative;
+        left: 4em;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+    /* Responsive Gallery Layout */
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .col-lg-4 {
+        width: 50%;
+        position: relative;
+        /* left: 3em; */
+       justify-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.333%;
+    }
+}
+
+
+/* General Gallery and Image Styles */
+
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    /* On smaller screens (tablets and phones), use a single column layout */
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .about h3 {
+        font-size: 1.3rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* For even smaller screens (mobile phones), further reduce the text size and space */
+    .gallery-item {
+        width: 100%;
+    }
+
+    .about h3 {
+        font-size: 1.2rem;
+    }
+
+    .about p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive design for mobile and tablet */
+@media (max-width: 768px) {
+    .register-form {
+        padding: 20px;
+    }
+
+    .register-form .form-label {
+        font-size: 0.9rem;
+    }
+
+    .register-form .form-control {
+        font-size: 0.9rem;
+    }
+
+    .register-form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .register-form .form-label {
+        font-size: 0.85rem;
+    }
+
+    .register-form .form-control {
+        font-size: 0.85rem;
+    }
+
+    .register-form button {
+        font-size: 0.95rem;
+    }
+}
